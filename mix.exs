@@ -3,7 +3,7 @@ defmodule SimpleBar.Mixfile do
 
   def project do
     [app: :simple_bar,
-     version: "0.0.6",
+     version: "0.0.7",
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -37,7 +37,7 @@ defmodule SimpleBar.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:earmark, ">= 0.0.0"},
+    [{:earmark, ">= 0.0.0", only: :dev},
     {:ex_doc, "~> 0.10", only: :dev}]
   end
 end
